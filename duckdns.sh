@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Duck DNS variables
-export DOMAIN=
+export SUBDOMAIN=
 export TOKEN=
 
 # script variables
@@ -41,7 +41,7 @@ function show_help () {
 
 function bind_ip () {
 	local IP=$1
-	local "URL=https://www.duckdns.org/update?domains=${DOMAIN}&token=${TOKEN}&ip=${IP}"
+	local "URL=https://www.duckdns.org/update?domains=${SUBDOMAIN}&token=${TOKEN}&ip=${IP}"
 
 	if [ "$IP" = "" ]; then
 		echo "IP Address was not found on interface $INTERFACE"
