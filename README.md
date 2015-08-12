@@ -3,6 +3,10 @@ Duck DNS Manual Update Script
 
 ## Quickstart
 
+1. Edit the ./duckdns.sh script.
+2. Set the `SUBDOMAIN` and the `TOKEN` variables from the [Duck DNS](https://www.duckdns.org/) website.
+3. Run these commands:
+
     ./duckdns.sh list
     ./duckdns.sh bind $interface
 
